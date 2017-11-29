@@ -44,7 +44,7 @@ public class CombinedChartRenderer extends DataRenderer {
      */
     protected void createRenderers(CombinedChart chart, ChartAnimator animator, ViewPortHandler viewPortHandler) {
 
-        mRenderers = new ArrayList<>();
+        mRenderers = new ArrayList<DataRenderer>();
 
         DrawOrder[] orders = chart.getDrawOrder();
 
@@ -129,7 +129,7 @@ public class CombinedChartRenderer extends DataRenderer {
                     ? -1
                     : ((CombinedData)chart.getData()).getAllData().indexOf(data);
 
-            ArrayList<Highlight> dataIndices = new ArrayList<>();
+            ArrayList<Highlight> dataIndices = new ArrayList<Highlight>();
             for (Highlight h : indices) {
                 if (h.getDataIndex() == dataIndex || h.getDataIndex() == -1)
                     dataIndices.add(h);

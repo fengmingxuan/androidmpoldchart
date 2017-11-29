@@ -109,7 +109,7 @@ public class ChartHighlighter<T extends BarLineScatterCandleBubbleDataProvider> 
 	 */
 	protected List<SelectionDetail> getSelectionDetailsAtIndex(int xIndex, int dataSetIndex) {
 
-		List<SelectionDetail> vals = new ArrayList<>();
+		List<SelectionDetail> vals = new ArrayList<SelectionDetail>();
 
 		if (mChart.getData() == null) 
 			return vals;

@@ -27,7 +27,7 @@ public class CombinedHighlighter extends ChartHighlighter<BarLineScatterCandleBu
     @Override
     protected List<SelectionDetail> getSelectionDetailsAtIndex(int xIndex, int dataSetIndex) {
 
-        List<SelectionDetail> vals = new ArrayList<>();
+        List<SelectionDetail> vals = new ArrayList<SelectionDetail>();
         float[] pts = new float[2];
 
         CombinedData data = (CombinedData) mChart.getData();

@@ -47,7 +47,7 @@ public class FileUtils {
         // Get the text file
         File file = new File(sdcard, path);
 
-        List<Entry> entries = new ArrayList<>();
+        List<Entry> entries = new ArrayList<Entry>();
         @SuppressWarnings("resource")
         BufferedReader br = null;
         
@@ -122,7 +122,7 @@ public class FileUtils {
      */
     public static List<Entry> loadEntriesFromAssets(AssetManager am, String path) {
 
-        List<Entry> entries = new ArrayList<>();
+        List<Entry> entries = new ArrayList<Entry>();
 
         BufferedReader reader = null;
         try {
@@ -251,7 +251,7 @@ public class FileUtils {
 
     public static List<BarEntry> loadBarEntriesFromAssets(AssetManager am, String path) {
 
-        List<BarEntry> entries = new ArrayList<>();
+        List<BarEntry> entries = new ArrayList<BarEntry>();
 
         BufferedReader reader = null;
         try {

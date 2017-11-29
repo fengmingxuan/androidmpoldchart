@@ -37,7 +37,7 @@ public class PieData extends ChartData<IPieDataSet> {
     }
 
     private static List<IPieDataSet> toList(IPieDataSet dataSet) {
-        List<IPieDataSet> sets = new ArrayList<>();
+        List<IPieDataSet> sets = new ArrayList<IPieDataSet>();
         sets.add(dataSet);
         return sets;
     }

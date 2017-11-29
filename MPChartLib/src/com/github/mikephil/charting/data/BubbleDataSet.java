@@ -91,7 +91,7 @@ public class BubbleDataSet extends BarLineScatterCandleBubbleDataSet<BubbleEntry
     @Override
     public DataSet<BubbleEntry> copy() {
 
-        List<BubbleEntry> yVals = new ArrayList<>();
+        List<BubbleEntry> yVals = new ArrayList<BubbleEntry>();
 
         for (int i = 0; i < mYVals.size(); i++) {
             yVals.add(mYVals.get(i).copy());

@@ -36,7 +36,7 @@ public class CandleData extends BarLineScatterCandleBubbleData<ICandleDataSet> {
     }
     
     private static List<ICandleDataSet> toList(ICandleDataSet dataSet) {
-        List<ICandleDataSet> sets = new ArrayList<>();
+        List<ICandleDataSet> sets = new ArrayList<ICandleDataSet>();
         sets.add(dataSet);
         return sets;
     }

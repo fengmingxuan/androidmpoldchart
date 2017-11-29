@@ -75,8 +75,8 @@ public abstract class BaseDataSet<T extends Entry> implements IDataSet<T> {
      * Default constructor.
      */
     public BaseDataSet() {
-        mColors = new ArrayList<>();
-        mValueColors = new ArrayList<>();
+        mColors = new ArrayList<Integer>();
+        mValueColors = new ArrayList<Integer>();
 
         // default color
         mColors.add(Color.rgb(140, 234, 255));
@@ -164,7 +164,7 @@ public abstract class BaseDataSet<T extends Entry> implements IDataSet<T> {
      */
     public void setColors(int[] colors, Context c) {
 
-        List<Integer> clrs = new ArrayList<>();
+        List<Integer> clrs = new ArrayList<Integer>();
 
         for (int color : colors) {
             clrs.add(c.getResources().getColor(color));
@@ -180,7 +180,7 @@ public abstract class BaseDataSet<T extends Entry> implements IDataSet<T> {
      */
     public void addColor(int color) {
         if (mColors == null)
-            mColors = new ArrayList<>();
+            mColors = new ArrayList<Integer>();
         mColors.add(color);
     }
 
@@ -222,7 +222,7 @@ public abstract class BaseDataSet<T extends Entry> implements IDataSet<T> {
      * Resets all colors of this DataSet and recreates the colors array.
      */
     public void resetColors() {
-        mColors = new ArrayList<>();
+        mColors = new ArrayList<Integer>();
     }
 
     /** ###### ###### OTHER STYLING RELATED METHODS ##### ###### */

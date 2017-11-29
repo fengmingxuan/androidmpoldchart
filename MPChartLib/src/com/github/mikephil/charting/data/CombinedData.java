@@ -89,7 +89,7 @@ public class CombinedData extends BarLineScatterCandleBubbleData<IBarLineScatter
      */
     public List<ChartData> getAllData() {
 
-        List<ChartData> data = new ArrayList<>();
+        List<ChartData> data = new ArrayList<ChartData>();
         if(mLineData != null)
             data.add(mLineData);
         if(mBarData != null)

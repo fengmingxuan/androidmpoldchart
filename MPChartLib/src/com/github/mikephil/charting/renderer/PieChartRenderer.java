@@ -1,6 +1,7 @@
 
 package com.github.mikephil.charting.renderer;
 
+import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -31,6 +32,7 @@ import com.github.mikephil.charting.utils.ViewPortHandler;
 import java.lang.ref.WeakReference;
 import java.util.List;
 
+@SuppressLint("NewApi")
 public class PieChartRenderer extends DataRenderer {
 
     protected PieChart mChart;
@@ -116,7 +118,7 @@ public class PieChartRenderer extends DataRenderer {
 
             if (width > 0 && height > 0) {
 
-                mDrawBitmap = new WeakReference<>(Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_4444));
+                mDrawBitmap = new WeakReference<Bitmap>(Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_4444));
                 mBitmapCanvas = new Canvas(mDrawBitmap.get());
             } else
                 return;

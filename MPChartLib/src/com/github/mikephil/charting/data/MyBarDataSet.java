@@ -59,7 +59,7 @@ public class MyBarDataSet extends LineScatterCandleRadarDataSet<BarEntry> implem
     @Override
     public DataSet<BarEntry> copy() {
 
-        List<BarEntry> yVals = new ArrayList<>();
+        List<BarEntry> yVals = new ArrayList<BarEntry>();
 
         for (int i = 0; i < mYVals.size(); i++) {
             yVals.add(((BarEntry) mYVals.get(i)).copy());

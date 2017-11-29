@@ -449,7 +449,7 @@ public abstract class PieRadarChartBase<T extends ChartData<? extends IDataSet<?
      */
     public List<SelectionDetail> getSelectionDetailsAtIndex(int xIndex) {
 
-        List<SelectionDetail> vals = new ArrayList<>();
+        List<SelectionDetail> vals = new ArrayList<SelectionDetail>();
 
         for (int i = 0; i < mData.getDataSetCount(); i++) {
 
